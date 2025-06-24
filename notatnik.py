@@ -53,7 +53,7 @@ button_dodaj_wypozyczalnie.grid(row=5, column=3, columnspan=1)
 ramka_szczegoly_wypozyczalni = Frame(root)
 ramka_szczegoly_wypozyczalni.grid(row=0, column=3 )
 
-label_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Szczegóły Wypożyczalni:')
+label_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Szczegoły Wypożyczalni:')
 label_szczegoly_wypozyczalni.grid(row=0, column=0)
 
 label_nazwa_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Nazwa: ')
@@ -74,24 +74,24 @@ label_miejscowosc_szczegoly_obiektu.grid(row=1, column=4)
 label_miejscowosc_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
 label_miejscowosc_szczegoly_obiektu_wartosc.grid(row=1, column=5)
 
-label_liczba_samochodow_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Liczba samochodów: ')
+label_liczba_samochodow_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Liczba samochodow: ')
 label_liczba_samochodow_szczegoly_wypozyczalni.grid(row=1, column=6)
 
 label_liczba_samochodow_szczegoly_wypozyczalni_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
 label_liczba_samochodow_szczegoly_wypozyczalni_wartosc.grid(row=1, column=7)
 
 #pracownik
-ramka_lista_pracowników = Frame(root)
-ramka_lista_pracowników.grid(row=0, column=1, columnspan=1)
-label_lista_pracownikow = Label(ramka_lista_pracowników, text='Lista Pracowników')
+ramka_lista_pracownikow = Frame(root)
+ramka_lista_pracownikow.grid(row=0, column=1, columnspan=1)
+label_lista_pracownikow = Label(ramka_lista_pracownikow, text='Lista Pracownikow')
 label_lista_pracownikow.grid(row=1, column=0)
-listbox_lista_pracownikow = Listbox(ramka_lista_pracowników)
+listbox_lista_pracownikow = Listbox(ramka_lista_pracownikow)
 listbox_lista_pracownikow.grid(row=0, column=0, columnspan=1)
 
-button_usun_pracownikow = Button(ramka_lista_pracowników, text='Usuń Pracownika')
+button_usun_pracownikow = Button(ramka_lista_pracownikow, text='Usuń Pracownika')
 button_usun_pracownikow.grid(row=2, column=1)
 
-button_edytuj_pracownikow = Button(ramka_lista_pracowników, text='Edytuj Pracownika')
+button_edytuj_pracownikow = Button(ramka_lista_pracownikow, text='Edytuj Pracownika')
 button_edytuj_pracownikow.grid(row=3, column=1)
 
 # formularz
@@ -124,32 +124,32 @@ button_dodaj_pracownika.grid(row=4, column=3, columnspan=1)
 ramka_szczegoly_pracownikow = Frame(root)
 ramka_szczegoly_pracownikow.grid(row=1, column=3 )
 
-label_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='Szczegóły Pracownika:')
-label_szczególy_pracownikow.grid(row=0, column=0)
+label_szczegoly_pracownikow = Label(ramka_szczegoly_pracownikow, text='Szczegoły Pracownika:')
+label_szczegoly_pracownikow.grid(row=0, column=0)
 
-label_imie_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='imie: ')
-label_imie_szczególy_pracownikow.grid(row=1, column=0)
+label_imie_szczegoly_pracownikow = Label(ramka_szczegoly_pracownikow, text='imie: ')
+label_imie_szczegoly_pracownikow.grid(row=1, column=0)
 
-label_imie_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
-label_imie_szczególy_pracownikow_wartosc.grid(row=1, column=1)
+label_imie_szczegoly_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_imie_szczegoly_pracownikow_wartosc.grid(row=1, column=1)
 
-label_nazwisko_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='nazwisko: ')
-label_nazwisko_szczególy_pracownikow.grid(row=1, column=2)
+label_nazwisko_szczegoly_pracownikow = Label(ramka_szczegoly_pracownikow, text='nazwisko: ')
+label_nazwisko_szczegoly_pracownikow.grid(row=1, column=2)
 
-label_nazwisko_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
-label_nazwisko_szczególy_pracownikow_wartosc.grid(row=1, column=3)
+label_nazwisko_szczegoly_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_nazwisko_szczegoly_pracownikow_wartosc.grid(row=1, column=3)
 
-label_miejsce_pracy_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='Miejsce Pracy: ')
-label_miejsce_pracy_szczególy_pracownikow.grid(row=1, column=4)
+label_miejsce_pracy_szczegoly_pracownikow = Label(ramka_szczegoly_pracownikow, text='Miejsce Pracy: ')
+label_miejsce_pracy_szczegoly_pracownikow.grid(row=1, column=4)
 
-label_miejsce_pracy_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
-label_miejsce_pracy_szczególy_pracownikow_wartosc.grid(row=1, column=5)
+label_miejsce_pracy_szczegoly_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_miejsce_pracy_szczegoly_pracownikow_wartosc.grid(row=1, column=5)
 
 
 #klient
 ramka_lista_klientow = Frame(root)
 ramka_lista_klientow.grid(row=0, column=2, columnspan=1)
-label_lista_klientow = Label(ramka_lista_klientow  , text='Lista Klientów')
+label_lista_klientow = Label(ramka_lista_klientow  , text='Lista Klientow')
 label_lista_klientow.grid(row=1, column=0)
 listbox_lista_klientow = Listbox(ramka_lista_klientow)
 listbox_lista_klientow.grid(row=0, column=0, columnspan=1)
@@ -204,7 +204,7 @@ button_dodaj_klienta.grid(row=7, column=3, columnspan=1)
 ramka_szczegoly_klientow = Frame(root)
 ramka_szczegoly_klientow.grid(row=3, column=3 )
 
-label_szczegoly_Klienta = Label(ramka_szczegoly_klientow, text='Szczegóły Klienta:')
+label_szczegoly_Klienta = Label(ramka_szczegoly_klientow, text='Szczegoły Klienta:')
 label_szczegoly_Klienta.grid(row=0, column=0)
 
 label_imie_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Imie: ')
