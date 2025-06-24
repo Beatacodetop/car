@@ -14,39 +14,56 @@ listbox_lista_wypozyczalni = Listbox(ramka_lista_wypozyczalni)
 listbox_lista_wypozyczalni.grid(row=0, column=0, columnspan=1)
 
 # formularz_wypożyczalnia
-ramka_formularz_Wypozyczalni = Frame(root)
-ramka_formularz_Wypozyczalni.grid(row=1, column=0, columnspan=1)
+ramka_formularz_wypozyczalni = Frame(root)
+ramka_formularz_wypozyczalni.grid(row=1, column=0, columnspan=1)
 
-label_formularz_Wypozyczalni = Label(ramka_formularz_Wypozyczalni, text='Formularz Wypożyczalni')
-label_formularz_Wypozyczalni.grid(row=0, column=1, columnspan=2)
+label_formularz_wypozyczalni = Label(ramka_formularz_wypozyczalni, text='Formularz Wypożyczalni')
+label_formularz_wypozyczalni.grid(row=0, column=1, columnspan=2)
 
-label_Nazwa = Label(ramka_formularz_Wypozyczalni, text='Nazwa')
-label_Nazwa.grid(row=1, column=2, sticky=W)
+label_nazwa = Label(ramka_formularz_wypozyczalni, text='Nazwa')
+label_nazwa.grid(row=1, column=2, sticky=W)
 
-label_Pracownicy = Label(ramka_formularz_Wypozyczalni, text='Pracownicy')
-label_Pracownicy.grid(row=2, column=2, sticky=W)
+label_pracownicy = Label(ramka_formularz_wypozyczalni, text='Pracownicy')
+label_pracownicy.grid(row=2, column=2, sticky=W)
 
-label_miejscowosc = Label(ramka_formularz_Wypozyczalni, text='Miejscowość')
+label_miejscowosc = Label(ramka_formularz_wypozyczalni, text='Miejscowość')
 label_miejscowosc.grid(row=3, column=2, sticky=W)
 
-label_liczba_samochodow = Label(ramka_formularz_Wypozyczalni, text='Liczba samochodow')
+label_liczba_samochodow = Label(ramka_formularz_wypozyczalni, text='Liczba samochodow')
 label_liczba_samochodow.grid(row=4, column=2, sticky=W)
 
 
-ramka_lista_Pracowników = Frame(root)
-ramka_lista_Pracowników.grid(row=0, column=1, columnspan=1)
-label_lista_Pracownikow = Label(ramka_lista_Pracowników, text='Lista Pracowników')
-label_lista_Pracownikow.grid(row=1, column=0)
-listbox_lista_Pracownikow = Listbox(ramka_lista_Pracowników)
-listbox_lista_Pracownikow.grid(row=0, column=0, columnspan=1)
+ramka_lista_pracowników = Frame(root)
+ramka_lista_pracowników.grid(row=0, column=1, columnspan=1)
+label_lista_pracownikow = Label(ramka_lista_pracowników, text='Lista Pracowników')
+label_lista_pracownikow.grid(row=1, column=0)
+listbox_lista_pracownikow = Listbox(ramka_lista_pracowników)
+listbox_lista_pracownikow.grid(row=0, column=0, columnspan=1)
+
+# formularz_pracownicy
+ramka_formularz_pracownikow = Frame(root)
+ramka_formularz_pracownikow.grid(row=1, column=1, columnspan=1)
 
 
-ramka_lista_Klientow = Frame(root)
-ramka_lista_Klientow.grid(row=0, column=2, columnspan=1)
-label_lista_Klientow = Label(ramka_lista_Klientow  , text='Lista Klientów')
-label_lista_Klientow.grid(row=1, column=0)
-listbox_lista_KLientow = Listbox(ramka_lista_Klientow)
-listbox_lista_KLientow.grid(row=0, column=0, columnspan=1)
+label_formularz_pracownikow = Label(ramka_formularz_pracownikow, text='Formularz Pracownika')
+label_formularz_pracownikow.grid(row=0, column=1, columnspan=2)
+
+label_imie = Label(ramka_formularz_pracownikow, text='Imie')
+label_imie.grid(row=1, column=2, sticky=W)
+
+label_nazwisko = Label(ramka_formularz_pracownikow, text='Nazwisko')
+label_nazwisko.grid(row=2, column=2, sticky=W)
+
+label_miejsce_pracy = Label(ramka_formularz_pracownikow, text='Miejsce Pracy')
+label_miejsce_pracy.grid(row=3, column=2, sticky=W)
+
+
+ramka_lista_klientow = Frame(root)
+ramka_lista_klientow.grid(row=0, column=2, columnspan=1)
+label_lista_klientow = Label(ramka_lista_klientow  , text='Lista Klientów')
+label_lista_klientow.grid(row=1, column=0)
+listbox_lista_kLientow = Listbox(ramka_lista_klientow)
+listbox_lista_kLientow.grid(row=0, column=0, columnspan=1)
 
 
 
