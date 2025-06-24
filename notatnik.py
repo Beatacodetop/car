@@ -13,7 +13,7 @@ label_lista_wypozyczalni.grid(row=1, column=0)
 listbox_lista_wypozyczalni = Listbox(ramka_lista_wypozyczalni)
 listbox_lista_wypozyczalni.grid(row=0, column=0, columnspan=1)
 
-# formularz_wypożyczalnia
+# formularz
 ramka_formularz_wypozyczalni = Frame(root)
 ramka_formularz_wypozyczalni.grid(row=1, column=0, columnspan=1)
 
@@ -32,7 +32,7 @@ label_miejscowosc.grid(row=3, column=2, sticky=W)
 label_liczba_samochodow = Label(ramka_formularz_wypozyczalni, text='Liczba samochodow')
 label_liczba_samochodow.grid(row=4, column=2, sticky=W)
 
-
+#pracownik
 ramka_lista_pracowników = Frame(root)
 ramka_lista_pracowników.grid(row=0, column=1, columnspan=1)
 label_lista_pracownikow = Label(ramka_lista_pracowników, text='Lista Pracowników')
@@ -40,7 +40,7 @@ label_lista_pracownikow.grid(row=1, column=0)
 listbox_lista_pracownikow = Listbox(ramka_lista_pracowników)
 listbox_lista_pracownikow.grid(row=0, column=0, columnspan=1)
 
-# formularz_pracownicy
+# formularz
 ramka_formularz_pracownikow = Frame(root)
 ramka_formularz_pracownikow.grid(row=1, column=1, columnspan=1)
 
@@ -57,7 +57,7 @@ label_nazwisko.grid(row=2, column=2, sticky=W)
 label_miejsce_pracy = Label(ramka_formularz_pracownikow, text='Miejsce Pracy')
 label_miejsce_pracy.grid(row=3, column=2, sticky=W)
 
-
+#klient
 ramka_lista_klientow = Frame(root)
 ramka_lista_klientow.grid(row=0, column=2, columnspan=1)
 label_lista_klientow = Label(ramka_lista_klientow  , text='Lista Klientów')
@@ -65,8 +65,7 @@ label_lista_klientow.grid(row=1, column=0)
 listbox_lista_klientow = Listbox(ramka_lista_klientow)
 listbox_lista_klientow.grid(row=0, column=0, columnspan=1)
 
-
-# formularz_klienta
+# formularz
 ramka_formularz_klientow = Frame(root)
 ramka_formularz_klientow.grid(row=1, column=2, columnspan=1)
 
@@ -90,5 +89,19 @@ label_auto.grid(row=5, column=2, sticky=W)
 
 label_wypozyzalnia = Label(ramka_formularz_klientow, text='Wypożyczalnia:')
 label_wypozyzalnia.grid(row=6, column=2, sticky=W)
+
+entry_imie = Entry(ramka_formularz_klientow)
+entry_imie.grid(row=1, column=3)
+entry_nazwisko = Entry(ramka_formularz_klientow)
+entry_nazwisko.grid(row=2, column=3)
+entry_adres = Entry(ramka_formularz_klientow)
+entry_adres.grid(row=3, column=3)
+entry_pesel = Entry(ramka_formularz_klientow)
+entry_pesel.grid(row=4, column=3)
+entry_auto = Entry(ramka_formularz_klientow)
+entry_auto.grid(row=5, column=3)
+entry_wypozyczalnia = Entry(ramka_formularz_klientow)
+entry_wypozyczalnia.grid(row=6, column=3)
+
 
 root.mainloop()
