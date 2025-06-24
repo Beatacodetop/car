@@ -40,7 +40,8 @@ entry_miejscowosc = Entry(ramka_formularz_wypozyczalni)
 entry_miejscowosc.grid(row=3, column=3)
 entry_liczba_samochodow = Entry(ramka_formularz_wypozyczalni)
 entry_liczba_samochodow.grid(row=4, column=3)
-
+button_dodaj_wypozyczalnie = Button(ramka_formularz_wypozyczalni, text='Dodaj', )
+button_dodaj_wypozyczalnie.grid(row=5, column=3, columnspan=1)
 
 #pracownik
 ramka_lista_pracowników = Frame(root)
@@ -73,6 +74,8 @@ entry_nazwisko = Entry(ramka_formularz_pracownikow)
 entry_nazwisko.grid(row=2, column=3)
 entry_miejsce_pracy = Entry(ramka_formularz_pracownikow)
 entry_miejsce_pracy.grid(row=3, column=3)
+button_dodaj_pracownika = Button(ramka_formularz_pracownikow, text='Dodaj', )
+button_dodaj_pracownika.grid(row=4, column=3, columnspan=1)
 
 #klient
 ramka_lista_klientow = Frame(root)
@@ -119,6 +122,7 @@ entry_auto = Entry(ramka_formularz_klientow)
 entry_auto.grid(row=5, column=3)
 entry_wypozyczalnia = Entry(ramka_formularz_klientow)
 entry_wypozyczalnia.grid(row=6, column=3)
-
+button_dodaj_klienta = Button(ramka_formularz_klientow, text='Dodaj', )
+button_dodaj_klienta.grid(row=7, column=3, columnspan=1)
 
 root.mainloop()
