@@ -90,10 +90,10 @@ ramka_formularz_pracownikow.grid(row=1, column=1, columnspan=1)
 label_formularz_pracownikow = Label(ramka_formularz_pracownikow, text='Formularz Pracownika')
 label_formularz_pracownikow.grid(row=0, column=1, columnspan=2)
 
-label_imie = Label(ramka_formularz_pracownikow, text='Imie')
+label_imie = Label(ramka_formularz_pracownikow, text='imie')
 label_imie.grid(row=1, column=2, sticky=W)
 
-label_nazwisko = Label(ramka_formularz_pracownikow, text='Nazwisko')
+label_nazwisko = Label(ramka_formularz_pracownikow, text='nazwisko')
 label_nazwisko.grid(row=2, column=2, sticky=W)
 
 label_miejsce_pracy = Label(ramka_formularz_pracownikow, text='Miejsce Pracy')
@@ -107,6 +107,32 @@ entry_miejsce_pracy = Entry(ramka_formularz_pracownikow)
 entry_miejsce_pracy.grid(row=3, column=3)
 button_dodaj_pracownika = Button(ramka_formularz_pracownikow, text='Dodaj', )
 button_dodaj_pracownika.grid(row=4, column=3, columnspan=1)
+
+#szczegoly
+ramka_szczegoly_pracownikow = Frame(root)
+ramka_szczegoly_pracownikow.grid(row=1, column=3 )
+
+label_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='Szczegóły Pracownika:')
+label_szczególy_pracownikow.grid(row=0, column=0)
+
+label_imie_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='imie: ')
+label_imie_szczególy_pracownikow.grid(row=1, column=0)
+
+label_imie_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_imie_szczególy_pracownikow_wartosc.grid(row=1, column=1)
+
+label_nazwisko_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='nazwisko: ')
+label_nazwisko_szczególy_pracownikow.grid(row=1, column=2)
+
+label_nazwisko_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_nazwisko_szczególy_pracownikow_wartosc.grid(row=1, column=3)
+
+label_miejsce_pracy_szczególy_pracownikow = Label(ramka_szczegoly_pracownikow, text='Miejsce Pracy: ')
+label_miejsce_pracy_szczególy_pracownikow.grid(row=1, column=4)
+
+label_miejsce_pracy_szczególy_pracownikow_wartosc = Label(ramka_szczegoly_pracownikow, text='.....')
+label_miejsce_pracy_szczególy_pracownikow_wartosc.grid(row=1, column=5)
+
 
 #klient
 ramka_lista_klientow = Frame(root)
@@ -123,10 +149,10 @@ ramka_formularz_klientow.grid(row=1, column=2, columnspan=1)
 label_formularz_klientow = Label(ramka_formularz_klientow, text='Formularz Klienta')
 label_formularz_klientow.grid(row=0, column=1, columnspan=2)
 
-label_imie = Label(ramka_formularz_klientow, text='Imie')
+label_imie = Label(ramka_formularz_klientow, text='imie')
 label_imie.grid(row=1, column=2, sticky=W)
 
-label_nazwisko = Label(ramka_formularz_klientow, text='Nazwisko')
+label_nazwisko = Label(ramka_formularz_klientow, text='nazwisko')
 label_nazwisko.grid(row=2, column=2, sticky=W)
 
 label_adres = Label(ramka_formularz_klientow, text='Adres:')
