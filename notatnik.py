@@ -57,6 +57,13 @@ label_nazwisko.grid(row=2, column=2, sticky=W)
 label_miejsce_pracy = Label(ramka_formularz_pracownikow, text='Miejsce Pracy')
 label_miejsce_pracy.grid(row=3, column=2, sticky=W)
 
+entry_imie = Entry(ramka_formularz_pracownikow)
+entry_imie.grid(row=1, column=3)
+entry_nazwisko = Entry(ramka_formularz_pracownikow)
+entry_nazwisko.grid(row=2, column=3)
+entry_miejsce_pracy = Entry(ramka_formularz_pracownikow)
+entry_miejsce_pracy.grid(row=3, column=3)
+
 #klient
 ramka_lista_klientow = Frame(root)
 ramka_lista_klientow.grid(row=0, column=2, columnspan=1)
