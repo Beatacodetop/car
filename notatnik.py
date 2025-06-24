@@ -5,6 +5,8 @@ wypozyczalnie = []
 pracownicy = []
 klienci = []
 
+
+
 class Wypozyczalnia:
     def __init__(self, nazwa: str, pracownicy: str, miejscowosc: str, liczba_samochodow: str):
         self.nazwa = nazwa
@@ -45,6 +47,29 @@ class Pracownik:
         except:
             return [52.2297, 21.0122]
 
+
+class Klient:
+    def __init__(self, imie: str, nazwisko: str, adres: str, pesel: str, auto: str, wypozyczalnia: str):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.adres = adres
+        self.pesel = pesel
+        self.auto = auto
+        self.wypozyczalnia = wypozyczalnia
+        self.coordinates = self.get_coordinates()
+        self.marker = map_widget.set_marker(self.coordinates[0], self.coordinates[1],
+                                            text=f"{imie} {nazwisko} ({wypozyczalnia})")
+
+    def get_coordinates(self) -> list:
+        try:
+            url = f'https://pl.wikipedia.org/wiki/{self.adres.split(",")[0]}'
+            response = requests.get(url).text
+            response_html = BeautifulSoup(response, 'html.parser')
+            longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
+            latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
+            return [latitude, longitude]
+        except:
+            return [52.2297, 21.0122]
 
 
 root = Tk()
