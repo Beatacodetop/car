@@ -4,7 +4,7 @@ import  tkintermapview
 
 root = Tk()
 root.title('Wypożyczalnie')
-root.geometry('1500x1000')
+root.geometry('1300x1000')
 
 ramka_lista_wypozyczalni = Frame(root)
 ramka_lista_wypozyczalni.grid(row=0, column=0, columnspan=1 )
@@ -225,5 +225,12 @@ label_wypozyczalnia_szczegoly_klienta.grid(row=3, column=2)
 label_wypozyczalnia_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
 label_wypozyczalnia_szczegoly_klienta_wartosc.grid(row=3, column=3)
 
+#mapa
+ramka_mapa = Frame(root)
+ramka_mapa.grid(row=4, column=0, columnspan=4)
+map_widget = tkintermapview.TkinterMapView(ramka_mapa, width=1200, height=500)
+map_widget.grid(row=0, column=0, columnspan=2)
+map_widget.set_position(52.23, 21.00)
+map_widget.set_zoom(6)
 
 root.mainloop()
