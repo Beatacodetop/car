@@ -13,6 +13,12 @@ label_lista_wypozyczalni.grid(row=1, column=0)
 listbox_lista_wypozyczalni = Listbox(ramka_lista_wypozyczalni)
 listbox_lista_wypozyczalni.grid(row=0, column=0, columnspan=1)
 
+button_usun_wypozyczalnie = Button(ramka_lista_wypozyczalni, text='Usuń Wypożyczalnie')
+button_usun_wypozyczalnie.grid(row=2, column=1)
+
+button_edytuj_wypozyczalnie = Button(ramka_lista_wypozyczalni, text='Edytuj Wypożyczalnie')
+button_edytuj_wypozyczalnie.grid(row=3, column=1)
+
 # formularz
 ramka_formularz_wypozyczalni = Frame(root)
 ramka_formularz_wypozyczalni.grid(row=1, column=0, columnspan=1)
@@ -82,6 +88,12 @@ label_lista_pracownikow.grid(row=1, column=0)
 listbox_lista_pracownikow = Listbox(ramka_lista_pracowników)
 listbox_lista_pracownikow.grid(row=0, column=0, columnspan=1)
 
+button_usun_pracownikow = Button(ramka_lista_pracowników, text='Usuń Pracownika')
+button_usun_pracownikow.grid(row=2, column=1)
+
+button_edytuj_pracownikow = Button(ramka_lista_pracowników, text='Edytuj Pracownika')
+button_edytuj_pracownikow.grid(row=3, column=1)
+
 # formularz
 ramka_formularz_pracownikow = Frame(root)
 ramka_formularz_pracownikow.grid(row=1, column=1, columnspan=1)
@@ -141,6 +153,12 @@ label_lista_klientow = Label(ramka_lista_klientow  , text='Lista Klientów')
 label_lista_klientow.grid(row=1, column=0)
 listbox_lista_klientow = Listbox(ramka_lista_klientow)
 listbox_lista_klientow.grid(row=0, column=0, columnspan=1)
+
+button_usun_klientow = Button(ramka_lista_klientow, text='Usuń Klienta')
+button_usun_klientow.grid(row=2, column=1)
+
+button_edytuj_klientow = Button(ramka_lista_klientow, text='Edytuj Klienta')
+button_edytuj_klientow.grid(row=3, column=1)
 
 # formularz
 ramka_formularz_klientow = Frame(root)
