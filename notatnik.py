@@ -182,4 +182,48 @@ entry_wypozyczalnia.grid(row=6, column=3)
 button_dodaj_klienta = Button(ramka_formularz_klientow, text='Dodaj', )
 button_dodaj_klienta.grid(row=7, column=3, columnspan=1)
 
+# szczegoly
+ramka_szczegoly_klientow = Frame(root)
+ramka_szczegoly_klientow.grid(row=3, column=3 )
+
+label_szczegoly_Klienta = Label(ramka_szczegoly_klientow, text='Szczegóły Klienta:')
+label_szczegoly_Klienta.grid(row=0, column=0)
+
+label_imie_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Imie: ')
+label_imie_szczegoly_klienta.grid(row=1, column=0)
+
+label_imie_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_imie_szczegoly_klienta_wartosc.grid(row=1, column=1)
+
+label_nazwisko_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Nazwisko: ')
+label_nazwisko_szczegoly_klienta.grid(row=1, column=2)
+
+label_nazwisko_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_nazwisko_szczegoly_klienta_wartosc.grid(row=1, column=3)
+
+label_adres_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Adres: ')
+label_adres_szczegoly_klienta.grid(row=2, column=0)
+
+label_adres_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_adres_szczegoly_klienta_wartosc.grid(row=2, column=1)
+
+label_PESEL_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='PESEL: ')
+label_PESEL_szczegoly_klienta.grid(row=2, column=2)
+
+label_PESEL_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_PESEL_szczegoly_klienta_wartosc.grid(row=2, column=3)
+
+label_auto_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Auto: ')
+label_auto_szczegoly_klienta.grid(row=3, column=0)
+
+label_auto_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_auto_szczegoly_klienta_wartosc.grid(row=3, column=1)
+
+label_wypozyczalnia_szczegoly_klienta = Label(ramka_szczegoly_klientow, text='Wypożyczalnia: ')
+label_wypozyczalnia_szczegoly_klienta.grid(row=3, column=2)
+
+label_wypozyczalnia_szczegoly_klienta_wartosc = Label(ramka_szczegoly_klientow, text='.....')
+label_wypozyczalnia_szczegoly_klienta_wartosc.grid(row=3, column=3)
+
+
 root.mainloop()
