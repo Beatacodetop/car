@@ -20,7 +20,7 @@ ramka_formularz_wypozyczalni.grid(row=1, column=0, columnspan=1)
 label_formularz_wypozyczalni = Label(ramka_formularz_wypozyczalni, text='Formularz Wypożyczalni')
 label_formularz_wypozyczalni.grid(row=0, column=1, columnspan=2)
 
-label_nazwa = Label(ramka_formularz_wypozyczalni, text='Nazwa')
+label_nazwa = Label(ramka_formularz_wypozyczalni, text='nazwa')
 label_nazwa.grid(row=1, column=2, sticky=W)
 
 label_pracownicy = Label(ramka_formularz_wypozyczalni, text='Pracownicy')
@@ -42,6 +42,37 @@ entry_liczba_samochodow = Entry(ramka_formularz_wypozyczalni)
 entry_liczba_samochodow.grid(row=4, column=3)
 button_dodaj_wypozyczalnie = Button(ramka_formularz_wypozyczalni, text='Dodaj', )
 button_dodaj_wypozyczalnie.grid(row=5, column=3, columnspan=1)
+
+#szczegoly 
+ramka_szczegoly_wypozyczalni = Frame(root)
+ramka_szczegoly_wypozyczalni.grid(row=0, column=3 )
+
+label_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Szczegóły Wypożyczalni:')
+label_szczegoly_wypozyczalni.grid(row=0, column=0)
+
+label_nazwa_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Nazwa: ')
+label_nazwa_szczegoly_wypozyczalni.grid(row=1, column=0)
+
+label_nazwa_szczegoly_wypozyczalni_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
+label_nazwa_szczegoly_wypozyczalni_wartosc.grid(row=1, column=1)
+
+label_pracownicy_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Pracownicy: ')
+label_pracownicy_szczegoly_wypozyczalni.grid(row=1, column=2)
+
+label_pracownicy_szczegoly_wypozyczalni_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
+label_pracownicy_szczegoly_wypozyczalni_wartosc.grid(row=1, column=3)
+
+label_miejscowosc_szczegoly_obiektu = Label(ramka_szczegoly_wypozyczalni, text='Miejscowość: ')
+label_miejscowosc_szczegoly_obiektu.grid(row=1, column=4)
+
+label_miejscowosc_szczegoly_obiektu_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
+label_miejscowosc_szczegoly_obiektu_wartosc.grid(row=1, column=5)
+
+label_liczba_samochodow_szczegoly_wypozyczalni = Label(ramka_szczegoly_wypozyczalni, text='Liczba samochodów: ')
+label_liczba_samochodow_szczegoly_wypozyczalni.grid(row=1, column=6)
+
+label_liczba_samochodow_szczegoly_wypozyczalni_wartosc = Label(ramka_szczegoly_wypozyczalni, text='.....')
+label_liczba_samochodow_szczegoly_wypozyczalni_wartosc.grid(row=1, column=7)
 
 #pracownik
 ramka_lista_pracowników = Frame(root)
