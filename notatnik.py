@@ -32,6 +32,16 @@ label_miejscowosc.grid(row=3, column=2, sticky=W)
 label_liczba_samochodow = Label(ramka_formularz_wypozyczalni, text='Liczba samochodow')
 label_liczba_samochodow.grid(row=4, column=2, sticky=W)
 
+entry_nazwa = Entry(ramka_formularz_wypozyczalni)
+entry_nazwa.grid(row=1, column=3)
+entry_pracownicy = Entry(ramka_formularz_wypozyczalni)
+entry_pracownicy.grid(row=2, column=3)
+entry_miejscowosc = Entry(ramka_formularz_wypozyczalni)
+entry_miejscowosc.grid(row=3, column=3)
+entry_liczba_samochodow = Entry(ramka_formularz_wypozyczalni)
+entry_liczba_samochodow.grid(row=4, column=3)
+
+
 #pracownik
 ramka_lista_pracowników = Frame(root)
 ramka_lista_pracowników.grid(row=0, column=1, columnspan=1)
